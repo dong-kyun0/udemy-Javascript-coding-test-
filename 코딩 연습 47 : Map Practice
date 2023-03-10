@@ -1,0 +1,12 @@
+// fullNames의 요소 중 first의 value값을 첫번째 알파벳을 대문자로 변환한 새로운 배열을 만들어라.
+const fullNames = [{first: 'Albus', last: 'Dumbledore'}, {first: 'Harry', last: 'Potter'}, {first: 'Hermione', last: 'Granger'}, {first: 'Ron', last: 'Weasley'}, {first: 'Rubeus', last: 'Hagrid'}, {first: 'Minerva', last: 'McGonagall'}, {first: 'Severus', last: 'Snape'}];
+
+// Write your code here
+const firstNames = fullNames.map(function(abc){
+    return abc.first.charAt(0).toUpperCase() + abc.first.slice(1);
+})
+
+/* 
+chatAt(0) : string method / 인수 값 = index 값 / 가리킴
+slice(1) : string method / 인수값 = index 값 / 해당 index 부터 뒷부분 전부를 의미.
+*/

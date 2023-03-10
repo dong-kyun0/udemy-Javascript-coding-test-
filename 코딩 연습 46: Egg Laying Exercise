@@ -1,0 +1,9 @@
+ // 호출 시 객체의 요소 중 eggCount가 +1 되며"EGG"를 반환하는 function을 요소로 갖는 hen 객체를 생성하라.
+ const hen = {
+    name : 'Helen',
+    eggCount : 0,
+    layAnEgg(){
+        this.eggCount ++;
+        return "EGG";
+    }
+}
